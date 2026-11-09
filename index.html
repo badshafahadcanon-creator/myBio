@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Badsha Fahad — Cyber Security Student</title>
+<meta name="description" content="Badsha Fahad — first-year Cyber Security student. Vulnerability research, network scanning, and CTF practice using Kali Linux, Nmap, and Wireshark." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">
+      <span class="prompt">~$</span> badsha_fahad
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#services">services</a>
+      <a href="#projects">projects</a>
+      <a href="#process">process</a>
+      <a href="#faq">faq</a>
+      <a href="#contact" class="nav__cta">contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow"><span class="dot"></span> status: actively learning</p>
+        <h1>
+          Badsha Fahad
+          <span class="hero__role">Cyber Security Student</span>
+        </h1>
+        <p class="hero__bio">
+          I'm in my first year of learning cyber security — currently focused on
+          vulnerability discovery, network reconnaissance, and packet-level analysis.
+          I learn by breaking things safely: labs, CTFs, and my own home network.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+        </div>
+
+        <div class="hero__stack">
+          <span class="tool-tag">Kali Linux</span>
+          <span class="tool-tag">Nmap</span>
+          <span class="tool-tag">Wireshark</span>
+        </div>
+      </div>
+
+      <div class="hero__terminal" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--r"></span>
+            <span class="terminal__dot terminal__dot--y"></span>
+            <span class="terminal__dot terminal__dot--g"></span>
+            <span class="terminal__title">recon.sh</span>
+          </div>
+          <div class="terminal__body" id="terminalBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <p class="eyebrow">$ cat about.md</p>
+      <h2 class="section__title">About Me</h2>
+      <div class="about__grid">
+        <p class="about__text">
+          I'm a first-year cyber security student building my foundations from the ground up.
+          My focus right now is understanding how systems break — scanning networks,
+          reading packet captures, and hunting for vulnerabilities in deliberately
+          vulnerable machines. I'm not chasing shortcuts; I'm putting in the reps that
+          turn theory into instinct.
+        </p>
+        <ul class="about__facts">
+          <li><span>Focus</span>Vulnerability discovery</li>
+          <li><span>Stage</span>First-year student</li>
+          <li><span>Method</span>Hands-on labs &amp; CTFs</li>
+          <li><span>Mindset</span>Curious, methodical, patient</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--panel" id="skills">
+    <div class="section__inner">
+      <p class="eyebrow">$ nmap --scan skills</p>
+      <h2 class="section__title">Skills Scan</h2>
+      <p class="section__lead">Ports open on this profile, ranked by current proficiency.</p>
+
+      <div class="skills__list">
+        <div class="skill" data-level="70">
+          <div class="skill__head">
+            <span class="skill__name">Vulnerability Discovery</span>
+            <span class="skill__pct">70%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill"></div></div>
+        </div>
+        <div class="skill" data-level="60">
+          <div class="skill__head">
+            <span class="skill__name">Network Scanning (Nmap)</span>
+            <span class="skill__pct">60%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill"></div></div>
+        </div>
+        <div class="skill" data-level="55">
+          <div class="skill__head">
+            <span class="skill__name">Packet Analysis (Wireshark)</span>
+            <span class="skill__pct">55%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill"></div></div>
+        </div>
+        <div class="skill" data-level="65">
+          <div class="skill__head">
+            <span class="skill__name">Linux &amp; Kali Environment</span>
+            <span class="skill__pct">65%</span>
+          </div>
+          <div class="skill__bar"><div class="skill__fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="section__inner">
+      <p class="eyebrow">$ ls services/</p>
+      <h2 class="section__title">Services</h2>
+      <p class="section__lead">
+        I'm early in my journey, so I'm not taking on paid work yet — but here's what
+        I'm actively building toward.
+      </p>
+
+      <div class="cards">
+        <div class="card card--muted">
+          <div class="card__icon">01</div>
+          <h3>Vulnerability Assessment</h3>
+          <p>Identifying weaknesses in test systems using structured, repeatable methodology.</p>
+          <span class="badge">In training</span>
+        </div>
+        <div class="card card--muted">
+          <div class="card__icon">02</div>
+          <h3>Network Scanning &amp; Enumeration</h3>
+          <p>Mapping hosts, open ports, and services with Nmap on lab and home networks.</p>
+          <span class="badge">In training</span>
+        </div>
+        <div class="card card--muted">
+          <div class="card__icon">03</div>
+          <h3>Traffic &amp; Packet Analysis</h3>
+          <p>Reading and interpreting captured traffic with Wireshark to spot anomalies.</p>
+          <span class="badge">In training</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section--panel" id="projects">
+    <div class="section__inner">
+      <p class="eyebrow">$ ls projects/ -la</p>
+      <h2 class="section__title">Projects</h2>
+      <p class="section__lead">A few things I've worked on while learning. Replace these with your own write-ups.</p>
+
+      <div class="cards cards--projects">
+        <div class="card">
+          <div class="card__tag">Home Lab</div>
+          <h3>Home Network Recon</h3>
+          <p>Full Nmap sweep of my own home network to map devices, open ports, and running services.</p>
+        </div>
+        <div class="card">
+          <div class="card__tag">CTF</div>
+          <h3>Beginner CTF Writeups</h3>
+          <p>Documented walkthroughs of beginner-friendly capture-the-flag challenges and lessons learned.</p>
+        </div>
+        <div class="card">
+          <div class="card__tag">Analysis</div>
+          <h3>Packet Capture Study</h3>
+          <p>Wireshark analysis of sample .pcap files to practice spotting suspicious traffic patterns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="section__inner">
+      <p class="eyebrow">$ cat methodology.md</p>
+      <h2 class="section__title">Work Process</h2>
+      <p class="section__lead">The pentesting methodology I'm training myself to follow, in order.</p>
+
+      <ol class="process">
+        <li>
+          <span class="process__num">01</span>
+          <div>
+            <h3>Reconnaissance</h3>
+            <p>Gather information about the target — passively and actively — before touching anything.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process__num">02</span>
+          <div>
+            <h3>Scanning</h3>
+            <p>Use tools like Nmap to identify live hosts, open ports, and running services.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process__num">03</span>
+          <div>
+            <h3>Enumeration</h3>
+            <p>Dig deeper into discovered services to understand versions, configs, and possible weak points.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process__num">04</span>
+          <div>
+            <h3>Vulnerability Analysis</h3>
+            <p>Compare findings against known vulnerabilities to identify real, exploitable risk.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process__num">05</span>
+          <div>
+            <h3>Reporting</h3>
+            <p>Document findings clearly — what was found, how, and what should be done about it.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--panel" id="faq">
+    <div class="section__inner">
+      <p class="eyebrow">$ man faq</p>
+      <h2 class="section__title">FAQ</h2>
+
+      <div class="faq">
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Are you available for freelance work?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Not yet — I'm a first-year student focused on learning. I'll open up services once I have solid, tested experience.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            What tools do you use most?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Kali Linux as my base OS, Nmap for scanning and enumeration, and Wireshark for packet-level traffic analysis.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Do you only work on your own systems?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Yes. Everything I practice on is my own lab, my own network, or legal, permission-based CTF platforms.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            How can I follow your progress?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>You can connect with me through the contact section below, or follow my updates on Facebook.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section__inner">
+      <p class="eyebrow">$ ./connect.sh</p>
+      <h2 class="section__title">Contact</h2>
+      <p class="section__lead">Have a question, an opportunity, or just want to talk security? Reach out.</p>
+
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required placeholder="What's on your mind?"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="contact__note" id="contactNote"></p>
+        </form>
+
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:tumikibokachele69@gmail.com">
+            <span class="contact__link-label">Email</span>
+            tumikibokachele69@gmail.com
+          </a>
+          <a class="contact__link" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">
+            <span class="contact__link-label">WhatsApp</span>
+            Chat on WhatsApp
+          </a>
+          <a class="contact__link" href="https://www.facebook.com/badshafahad.009" target="_blank" rel="noopener">
+            <span class="contact__link-label">Facebook</span>
+            @badshafahad.009
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p><span class="prompt">~$</span> badsha_fahad — cyber security student</p>
+    <p class="footer__small">Built with HTML, CSS &amp; JavaScript. No frameworks, no backend.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
